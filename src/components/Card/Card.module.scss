@@ -1,0 +1,68 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+  
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  }  
+   
+  .cardBody {
+    padding: 1rem;
+    background-color: #f8f9fa;
+  
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+      line-height: 1.5;
+  
+      svg {
+        margin-right: 8px; // Espace entre l'icône et le texte
+        color: #9d8ea7; // Couleur des icônes FontAwesome, à ajuster selon le besoin
+      }
+    }
+  }
+  // Utilisation des requêtes de média pour les ajustements spécifiques de taille d'écran
+@media (min-width: 768px) { // Pour les tablettes
+    .card {
+      margin: 1rem 2rem; // Augmente la marge pour un peu plus d'espace
+    }
+  }
+  
+  @media (min-width: 992px) { // Pour les desktops
+    .card {
+      // Vous pouvez ajuster la largeur ou la marge si nécessaire
+      max-width: 600px; // Augmente la largeur maximale sur les grands écrans
+    }
+  }
+  
+  @media (min-width: 1200px) { // Pour les grands écrans
+    .card {
+      // Ajustements pour les grands écrans si nécessaire
+      max-width: 800px;
+    }
+  }
+  
+  .cardBody {
+    padding: 1rem;
+    background-color: #f8f9fa;
+  
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+      line-height: 1.5;
+  
+      svg {
+        margin-right: 8px;
+        color: #9d8ea7;
+      }
+    }
+  }

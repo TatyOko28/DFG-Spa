@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+// Importez d'autres pages ou composants selon le besoin
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {/* Notez l'utilisation de Routes au lieu de Switch, et l'absence de l'attribut exact */}
+        <Route path="/" element={<HomePage />} />
+        {/* Ajoutez d'autres Route selon le besoin. Par exemple:
+          <Route path="/about" element={<AboutPage />} />
+        */}
+      </Routes>
+    </Router>
   );
 }
 

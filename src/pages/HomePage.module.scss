@@ -1,0 +1,22 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .homePage {
+      padding: 10px; // Réduire le padding sur les petits écrans
+    }
+  }
+  
+  .userCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  

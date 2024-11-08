@@ -1,0 +1,46 @@
+.searchBar {
+    display: flex;
+    justify-content: center; // Centrer la barre de recherche
+    margin: 20px; // Espace autour de la barre de recherche
+  }
+  
+  .searchInput {
+    padding: 10px 40px 10px 10px; // Ajout de padding à droite pour l'icône
+    border: 1px solid #ccc;
+    border-radius: 20px; // Bords arrondis pour une apparence stylisée
+    font-size: 16px;
+    width: 1180px; // Prend la pleine largeur de son conteneur
+    max-width: 100%; // Augmentez selon la largeur désirée
+    background-color: #fff;
+    background-image: url('/assets/search-icon.webp'); // Assurez-vous que le chemin est correct
+    background-repeat: no-repeat;
+    background-position: right 10px center; // Positionnez l'icône à droite, centrée verticalement
+    background-size: 20px; // Taille de l'icône
+    outline: none; // Supprime les contours lors de la mise au point
+    box-sizing: border-box; // Assurez-vous que le padding est inclus dans la largeur
+  
+    &::placeholder {
+      color: #999; // Couleur du placeholder
+    }
+  
+    &:focus {
+      border-color: #007bff; // Couleur de la bordure lors de la mise au point
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); // Ombre extérieure lors de la mise au point
+    }
+  }
+  @media (max-width: 768px) {
+    .searchInput {
+      padding: 10px; // Réduit le padding sur les petits écrans
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 1368px) {
+    .SearchBar_searchInput__keBYx {
+      padding: 20px;
+      width: 100%;
+      
+      
+  }
+ 
+}
